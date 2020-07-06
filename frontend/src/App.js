@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import styles from './Styles/MainPage.module.css';
+import useFetch from 'react-fetch-hook';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -23,4 +26,14 @@ function App() {
   );
 }
 
-export default App;
+function MainPage() {
+    return (
+        // <div>{styles.sheet}</div>
+        <div className={styles.sheet}>
+            <div className={styles.panel}></div>
+        </div>
+    )
+}
+
+// export default App;
+export default MainPage;
