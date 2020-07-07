@@ -2,8 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import styles from './Styles/MainPage.module.css';
-import useFetch from 'react-fetch-hook';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import useFetch from 'react-fetch-hook'; // install for docker
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom' // maybe install for docker;
+import {MainPage} from './Components/MainPage';
 
 function App() {
   return (
@@ -26,14 +27,11 @@ function App() {
   );
 }
 
-function MainPage() {
+function Main() {
     return (
-        // <div>{styles.sheet}</div>
-        <div className={styles.sheet}>
-            <div className={styles.panel}></div>
-        </div>
+        <MainPage />
     )
 }
 
 // export default App;
-export default MainPage;
+export default Main;
